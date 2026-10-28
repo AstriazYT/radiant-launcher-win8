@@ -4,9 +4,20 @@
   "description": "Launcher Radiant Survie - Version Windows 8",
   "main": "main.js",
   "scripts": {
-    "start": "electron . --disable-gpu"
+    "start": "electron . --disable-gpu",
+    "dist": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "com.radiant.survie.win8",
+    "productName": "Radiant Survie",
+    "win": {
+      "target": ["nsis", "portable"]
+    }
   },
   "dependencies": {
     "electron": "^22.3.27"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.6.1"
   }
 }
