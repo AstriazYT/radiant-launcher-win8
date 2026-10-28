@@ -1,0 +1,12 @@
+{
+  "name": "radiant-launcher-win8",
+  "version": "1.0.0",
+  "description": "Launcher Radiant Survie - Version Windows 8",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --disable-gpu"
+  },
+  "dependencies": {
+    "electron": "^22.3.27"
+  }
+}
